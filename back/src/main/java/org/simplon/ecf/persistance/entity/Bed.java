@@ -22,6 +22,9 @@ public class Bed {
     @JoinColumn(name = "id_bedroom", referencedColumnName = "id_bedroom")
     private Bedroom bedroom;
 
+    @Column(name = "available", nullable = false)
+    private boolean available;
+
     /**
      * return the bed's id.
      * 
