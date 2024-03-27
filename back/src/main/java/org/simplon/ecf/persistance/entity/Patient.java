@@ -42,4 +42,70 @@ public class Patient {
 
     @Column(name = "security_number", nullable = false, length = 15)
     private String security_number;
+
+    public Long getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Long patient) {
+        this.patient = patient;
+    }
+
+    public Service getService() {
+        return service;
+    }
+
+    public void setService(Service service) {
+        this.service = service;
+    }
+
+    public Bed getBed() {
+        return bed;
+    }
+
+    public void setBed(Bed bed) {
+        this.bed = bed;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
+    public String getSecurity_number() {
+        return security_number;
+    }
+
+    public void setSecurity_number(String security_number) {
+        this.security_number = security_number;
+    }
+
+    
 }
