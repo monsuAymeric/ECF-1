@@ -6,5 +6,5 @@ public class BedQueries {
         throw new IllegalStateException("Utility class not meant for instantiation!");
     }
 
-    public static final String FIND_BY_BEDROOM = "Select c FROM Bed c WHERE c.bedroom.id = :id_bedroom";
+    public static final String FIND_BY_BEDROOM = "Select b FROM Bed b WHERE b.bedroom.id = :id_bedroom";
 }
