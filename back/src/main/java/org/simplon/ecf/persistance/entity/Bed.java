@@ -22,18 +22,38 @@ public class Bed {
     @JoinColumn(name = "id_bedroom", referencedColumnName = "id_bedroom")
     private Bedroom bedroom;
 
+    /**
+     * return the bed's id.
+     * 
+     * @return the bed's id.
+     */
     public long getId() {
         return id;
     }
 
+    /**
+     * set the bed's id.
+     * 
+     * @param id the bed's id to set.
+     */
     public void setId(long id) {
         this.id = id;
     }
 
+    /**
+     * return the bed's bedroom.
+     * 
+     * @return the bed's bedroom.
+     */
     public Bedroom getBedroom() {
         return bedroom;
     }
 
+    /**
+     * set the bed's bedroom.
+     * 
+     * @param id the bed's bedroom to set.
+     */
     public void setBedroom(Bedroom bedroom) {
         this.bedroom = bedroom;
     }
