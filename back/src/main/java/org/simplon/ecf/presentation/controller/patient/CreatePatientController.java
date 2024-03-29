@@ -21,6 +21,11 @@ public class CreatePatientController {
         this.patientService = patientService;
     }
 
+    /**
+     * Create a new patient.
+     * 
+     * @param patient the patient to create.
+     */
     @PostMapping("/patients")
     public void createPatient(final @RequestBody PatientDto patient) {
         patientService.createPatient(patient);
