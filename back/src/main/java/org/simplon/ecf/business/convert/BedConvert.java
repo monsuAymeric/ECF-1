@@ -33,7 +33,7 @@ public class BedConvert {
     public BedDto entityToDto(final Bed entity) {
         BedDto dto = new BedDto();
         dto.setId(entity.getId());
-        dto.setBedroomDto(entity.getBedroom() != null ? bedroomConvert.entityListToDtoList(entity.getBedroom()) : null);
+        dto.setBedroomDto(entity.getBedroom() != null ? bedroomConvert.entityToDto(entity.getBedroom()) : null);
         
         return dto;
     }
@@ -48,7 +48,9 @@ public class BedConvert {
     public Bed dtoToEntity(final BedDto dto) {
         Bed entity = new Bed();
         entity.setId(dto.getId());
-        entity.setBedroom(dto.getBedroomDto() != null ? bedroomConvert.dtoListToEntityList(dto.getBedroomDto()) : null);
+        entity.setBedroom(dto.getBedroomDto() != null ? bedroomConvert.dtoToEntity(dto.getBedroomDto()) : null);
+
+        return entity;
     }
 
     /**
