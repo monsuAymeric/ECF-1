@@ -18,7 +18,7 @@ public class Patient {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_patient")
-    private Long patient;
+    private Long id;
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_service", referencedColumnName = "id_service")
@@ -48,8 +48,8 @@ public class Patient {
      * 
      * @return the patient's id
      */
-    public Long getPatient() {
-        return patient;
+    public Long getId() {
+        return id;
     }
 
     /**
@@ -57,8 +57,8 @@ public class Patient {
      * 
      * @param id the patient's id to set.
      */
-    public void setPatient(Long patient) {
-        this.patient = patient;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     /**
